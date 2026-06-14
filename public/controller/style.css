@@ -1,0 +1,27 @@
+.app--controller {
+  align-items: stretch;
+}
+
+.controller-panel {
+  align-self: center;
+}
+
+.controller-state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.status-label {
+  color: var(--muted);
+}
+
+#statusText {
+  font-size: 22px;
+}

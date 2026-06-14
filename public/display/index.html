@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.00秒チャレンジ Display</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/display/style.css" />
+  </head>
+  <body>
+    <main class="display">
+      <section class="display__inner">
+        <p class="display__eyebrow">5.00 SECOND CHALLENGE</p>
+        <h1 class="display__title">5.00秒で止めろ</h1>
+
+        <div id="timerValue" class="timer-value" aria-live="polite">--.--</div>
+        <p id="displayMessage" class="display__message">STARTを押して挑戦開始</p>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/display/display.js"></script>
+  </body>
+</html>

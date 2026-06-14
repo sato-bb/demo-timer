@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.00秒チャレンジ Controller</title>
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/controller/style.css" />
+  </head>
+  <body>
+    <main class="app app--controller">
+      <section class="panel controller-panel">
+        <p class="eyebrow">Controller</p>
+        <h1 class="title">5.00秒<br />チャレンジ</h1>
+        <p class="lead">STARTで計測開始。5.00秒だと思った瞬間にSTOP。</p>
+
+        <div class="controller-state" aria-live="polite">
+          <span class="status-label">状態</span>
+          <strong id="statusText">待機中</strong>
+        </div>
+
+        <div class="actions">
+          <button id="startButton" class="button button--start" type="button">START</button>
+          <button id="stopButton" class="button button--stop" type="button" disabled>STOP</button>
+          <button id="resetButton" class="button button--reset" type="button">RESET</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/controller/controller.js"></script>
+  </body>
+</html>
