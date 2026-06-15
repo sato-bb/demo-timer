@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3003;
 const publicDir = path.join(__dirname, '..', 'public');
 
 app.use(express.static(publicDir));

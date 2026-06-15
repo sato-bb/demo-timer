@@ -19,8 +19,8 @@ npm run dev
 ## URLs
 
 ```text
-http://localhost:3000/controller
-http://localhost:3000/display
+http://localhost:3003/controller
+http://localhost:3003/display
 ```
 
 ## Structure
